@@ -18,5 +18,18 @@ GhostScan men-scan port umum & mencoba grab banner. Ada pre-check (3 pertanyaan)
 ## Instalasi & jalankan
 1. Pastikan file `main.py` dan `README.md` ada di satu folder.
 2. Gunakan Python 3: pada Termux/Linux/macOS jalankan:
-   ```bash
-   python3 main.py
+
+   ## Instalasi package via termux
+   `pkg update && pkg upgrade -y`
+   `pkg install python git nmap nano -y`
+`python -m pip install --upgrade pip`
+`pip install colorama`
+`cd /path/ke/folder/ghostscan`
+# pastikan file ada: main.py
+`chmod +x main.py`
+`python3 main.py`
+
+   ## instalasi package via linux
+   `sudo apt update && sudo apt upgrade -y`
+`sudo apt install python3`
+`python3-pip python3-venv git nmap net-tools tcpdump -y`
